@@ -11,10 +11,18 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
-
-`;
+function generateMarkdown(obj) {
+  return `This is my story
+today at ${obj.time} the weather was ${obj.weather}
+    
+SDF
+    
+SDF
+    
+SDF
+    
+SDF
+SDF`
 }
 
 module.exports = generateMarkdown;
