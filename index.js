@@ -28,25 +28,11 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
     .then(answerObj => {
-        const template = buildTemplate(answerObj);
+        const template = generateMarkdown(answerObj);
         // const template = generateMarkdown(answerObj);
 
         writeToFile("README.md", template)
     })
-}
-
-function buildTemplate(obj) {
-    return `This is my story
-today at ${obj.time} the weather was ${obj.weather}
-    
-SDF
-    
-SDF
-    
-SDF
-    
-SDF
-SDF`
 }
 
 // Function call to initialize app
